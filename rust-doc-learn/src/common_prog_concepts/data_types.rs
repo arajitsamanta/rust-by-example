@@ -1,18 +1,18 @@
 pub fn data_types() {
     println!("\n====== Data types example ======");
-    println!("******Scalar Types");
+    println!("******scalar types");
     scalars_types();
 
-    println!("******Numeric operations");
+    println!("******numeric operations");
     numeric_operations();
 
-    println!("******Booleans");
+    println!("******booleans");
     bools();
 
-    println!("******Characters");
+    println!("******characters");
     chars();
 
-    println!("******Compound Types");
+    println!("******compound types");
     compound_types();
 }
 

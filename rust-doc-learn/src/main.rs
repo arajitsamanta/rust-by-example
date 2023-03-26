@@ -6,12 +6,21 @@ use crate::common_prog_concepts::immutability;
 use crate::common_prog_concepts::shadow;
 use crate::common_prog_concepts::control_flows;
 
+mod ownership;
+use crate::ownership::ownership_in_rust;
+
 fn main() {
     println!("Hello, Rustaceans!");
+
+    //Common Programming Concepts
     immutability::immutability();
     consts::constants();
     shadow::shadowing();
     data_types::data_types();
     functions::function_example();
     control_flows::control_flows();
+
+    //Understanding Ownership 
+    ownership_in_rust::ownerships();
+    
 }
