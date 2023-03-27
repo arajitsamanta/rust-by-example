@@ -8,6 +8,7 @@ use crate::common_prog_concepts::control_flows;
 
 mod ownership;
 use crate::ownership::ownership_in_rust;
+use crate::ownership::ref_and_borrow;
 
 fn main() {
     println!("Hello, Rustaceans!");
@@ -22,5 +23,6 @@ fn main() {
 
     //Understanding Ownership 
     ownership_in_rust::ownerships();
+    ref_and_borrow::reference_and_borrows();
     
 }
