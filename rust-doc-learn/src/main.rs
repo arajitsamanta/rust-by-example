@@ -11,6 +11,7 @@ mod ownership;
 use crate::ownership::ownership_in_rust;
 use crate::ownership::ref_and_borrow;
 use crate::ownership::slices;
+use crate::structures::struct_impl;
 use crate::structures::structures_ex;
 
 fn main() {
@@ -31,4 +32,5 @@ fn main() {
 
     //Structures
     structures_ex::structure_example();
+    struct_impl::struct_with_method_impl();
 }

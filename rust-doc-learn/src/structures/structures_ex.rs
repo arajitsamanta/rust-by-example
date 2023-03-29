@@ -13,6 +13,11 @@ struct Point(i32, i32, i32);
 #[derive(Debug)]
 struct AlwaysEqual;
 
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
 
 pub fn structure_example() {
     println!("\n====== Structures ======");
@@ -42,6 +47,29 @@ pub fn structure_example() {
 
     println!("******Unit like structure");
     unit_like_structs();
+
+    println!("******Area of a triangle");
+    let area = area(32, 45);
+    let area_using_tuple = area_using_tuple((32, 45));
+
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    let area_using_struct = area_using_struct(&rect1);
+    println!(
+        "Area simple: {}, Tuple: {}, Struct: {}",
+        area, area_using_tuple, area_using_struct
+    );
+
+    let scale = 2;
+    let rect1 = Rectangle {
+        width: dbg!(30 * scale),
+        height: 50,
+    };
+
+    dbg!(&rect1);
 }
 
 fn simple_struct() {
@@ -90,7 +118,19 @@ fn tuple_struct() {
     println!("{:?} {:?}", black, origin);
 }
 
-fn unit_like_structs(){
+fn unit_like_structs() {
     let subject = AlwaysEqual;
-    println!("{:?}",subject)
+    println!("{:?}", subject)
+}
+
+fn area(height: u32, width: u32) -> u32 {
+    return height * width;
+}
+
+fn area_using_tuple(dimensions: (u32, u32)) -> u32 {
+    return dimensions.0 * dimensions.1;
+}
+
+fn area_using_struct(rect: &Rectangle) -> u32 {
+    return rect.width * rect.height;
 }
