@@ -14,6 +14,11 @@ use crate::ownership::slices;
 use crate::structures::struct_impl;
 use crate::structures::structures_ex;
 
+mod enums_pattern_matching;
+use crate::enums_pattern_matching::enums;
+use crate::enums_pattern_matching::match_control_flow;
+use crate::enums_pattern_matching::if_let;
+
 fn main() {
     println!("Hello, Rustaceans!");
 
@@ -33,4 +38,9 @@ fn main() {
     //Structures
     structures_ex::structure_example();
     struct_impl::struct_with_method_impl();
+
+    //Enums
+    enums::enum_ex();
+    match_control_flow::match_ex();
+    if_let::if_let_ex();
 }

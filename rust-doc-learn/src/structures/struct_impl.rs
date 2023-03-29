@@ -22,6 +22,7 @@ impl Rectangle {
 }
 
 pub fn struct_with_method_impl() {
+    println!("\n====== Structures with method implementation ======");
     let rect1 = Rectangle {
         width: 30,
         height: 50,

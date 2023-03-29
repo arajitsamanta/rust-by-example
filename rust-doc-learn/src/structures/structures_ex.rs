@@ -48,7 +48,7 @@ pub fn structure_example() {
     println!("******Unit like structure");
     unit_like_structs();
 
-    println!("******Area of a triangle");
+    println!("******Structure example - Area of a triangle");
     let area = area(32, 45);
     let area_using_tuple = area_using_tuple((32, 45));
 
