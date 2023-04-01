@@ -16,8 +16,14 @@ use crate::structures::structures_ex;
 
 mod enums_pattern_matching;
 use crate::enums_pattern_matching::enums;
-use crate::enums_pattern_matching::match_control_flow;
 use crate::enums_pattern_matching::if_let;
+use crate::enums_pattern_matching::match_control_flow;
+
+mod collections;
+use crate::collections::utf8_string;
+use crate::collections::vector;
+use crate::collections::hash_map;
+
 
 fn main() {
     println!("Hello, Rustaceans!");
@@ -43,4 +49,9 @@ fn main() {
     enums::enum_ex();
     match_control_flow::match_ex();
     if_let::if_let_ex();
+
+    //Collections
+    vector::vector_ex();
+    utf8_string::utf8_string_ex();
+    hash_map::hash_map_ex();
 }
