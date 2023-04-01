@@ -28,6 +28,9 @@ mod error_handling;
 use crate::error_handling::err_handling;
 use crate::error_handling::custom_types;
 
+mod generics;
+use crate::generics::generic_data_types;
+
 fn main() {
     println!("Hello, Rustaceans!");
 
@@ -61,4 +64,7 @@ fn main() {
     //Error handling
     err_handling::err_handling_ex();
     custom_types::custom_types_on_err();
+
+    //Generic Types, Traits and Lifetimes
+    generic_data_types::generic_data_types_ex();
 }
