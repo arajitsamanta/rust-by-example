@@ -24,6 +24,9 @@ use crate::collections::utf8_string;
 use crate::collections::vector;
 use crate::collections::hash_map;
 
+mod error_handling;
+use crate::error_handling::err_handling;
+use crate::error_handling::custom_types;
 
 fn main() {
     println!("Hello, Rustaceans!");
@@ -54,4 +57,8 @@ fn main() {
     vector::vector_ex();
     utf8_string::utf8_string_ex();
     hash_map::hash_map_ex();
+
+    //Error handling
+    err_handling::err_handling_ex();
+    custom_types::custom_types_on_err();
 }
