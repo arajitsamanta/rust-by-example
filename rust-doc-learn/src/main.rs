@@ -20,16 +20,17 @@ use crate::enums_pattern_matching::if_let;
 use crate::enums_pattern_matching::match_control_flow;
 
 mod collections;
+use crate::collections::hash_map;
 use crate::collections::utf8_string;
 use crate::collections::vector;
-use crate::collections::hash_map;
 
 mod error_handling;
-use crate::error_handling::err_handling;
 use crate::error_handling::custom_types;
+use crate::error_handling::err_handling;
 
 mod generics;
 use crate::generics::generic_data_types;
+use crate::generics::traits;
 
 fn main() {
     println!("Hello, Rustaceans!");
@@ -67,4 +68,5 @@ fn main() {
 
     //Generic Types, Traits and Lifetimes
     generic_data_types::generic_data_types_ex();
+    traits::traits_ex();
 }
